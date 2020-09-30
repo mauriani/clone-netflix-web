@@ -21,8 +21,11 @@ export default () => {
         Math.random() * (originals[0].items.results.length - 1)
       );
       let chosen = originals[0].items.results[randomChosen];
+      // informações adicionais
 
-      console.log(chosen);
+      let chosenInfo = await Tmdb.getMovieInfo(chosen.id, "tv");
+
+      setFeaturedData(chosenInfo);
     };
     loadAll();
   }, []);
