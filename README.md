@@ -1,6 +1,6 @@
 <h1>Netflix-clonex-Web</h1>
 
-<img src="https://user-images.githubusercontent.com/32397288/94734972-6871a280-0340-11eb-825f-26a9807ca973.png">
+<img src="https://user-images.githubusercontent.com/32397288/94735649-796ee380-0341-11eb-9068-3e4319929432.png">
 
 <h3>:computer: Tecnologias usadas</h3>
 <uL>
