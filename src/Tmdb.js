@@ -33,14 +33,14 @@ export default {
         slug: "trending",
         title: "Recomendados para você",
         items: await basicFetch(
-          `/trending/movie/week?language=pt-BR&api_key=${API_KEY}`
+          `/trending/all/week?language=pt-BR&api_key=${API_KEY}`
         ),
       },
       {
         slug: "toprated",
         title: "Em alta",
         items: await basicFetch(
-          `/movie/toprated/week?language=pt-BR&api_key=${API_KEY}`
+          `/movie/top_rated?language=pt-BR&api_key=${API_KEY}`
         ),
       },
       {
@@ -68,7 +68,7 @@ export default {
         slug: "romance",
         title: "Romance",
         items: await basicFetch(
-          `/discover/movie?with_genres=1074&language=pt-BR&api_key=${API_KEY}`
+          `/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`
         ),
       },
       {
