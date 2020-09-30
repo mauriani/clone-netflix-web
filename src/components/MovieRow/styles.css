@@ -11,7 +11,7 @@
 }
 
 .movieRow--list {
-  width: 99999999px;
+  transition: all ease 0.5s;
 }
 
 .movieRow--item {
@@ -41,6 +41,7 @@
   overflow: hidden;
   cursor: pointer;
   opacity: 0;
+  transition: all ease 0.5s;
 }
 
 .movieRow--left {
