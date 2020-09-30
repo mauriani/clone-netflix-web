@@ -1,4 +1,4 @@
-<h1>Clonando a Interface da Netflix</h1>
+<h1>Netflix-clonex-Web</h1>
 
 <img src="https://user-images.githubusercontent.com/32397288/94734972-6871a280-0340-11eb-825f-26a9807ca973.png">
 
