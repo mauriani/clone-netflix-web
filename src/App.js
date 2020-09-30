@@ -8,6 +8,7 @@ import "./App.css";
 export default () => {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(false);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -22,8 +23,8 @@ export default () => {
         Math.random() * (originals[0].items.results.length - 1)
       );
       let chosen = originals[0].items.results[randomChosen];
-      // informações adicionais
 
+      // informações adicionais
       let chosenInfo = await Tmdb.getMovieInfo(chosen.id, "tv");
 
       setFeaturedData(chosenInfo);
@@ -31,9 +32,23 @@ export default () => {
     loadAll();
   }, []);
 
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 10) {
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
+      }
+    };
+    window.addEventListener("scroll", scrollListener);
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
+  }, []);
+
   return (
     <div className="page">
-      <Header />
+      <Header black={blackHeader} />
       {featuredData && <FeaturedMovie item={featuredData} />}
       <section className="lists">
         {movieList.map((item, key) => (
