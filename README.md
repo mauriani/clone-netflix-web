@@ -2,6 +2,8 @@
 
 <img src="https://user-images.githubusercontent.com/32397288/94736056-0619a180-0342-11eb-8bf1-2ebcef07f5b3.png">
 
+<p>Link projeto: https://youthful-hopper-764e6f.netlify.app/ </p>
+
 <h3>:computer: Tecnologias usadas</h3>
 <uL>
   <li>ReactJs</li>
