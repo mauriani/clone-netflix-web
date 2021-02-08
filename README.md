@@ -23,7 +23,7 @@ Antes de iniciar você precisar ter o ambiente configurado.
 - nodejs
 
 ```jsx
-git clone https://github.com/mauriani/clone-netflix-web
+git clone https://github.com/mauriani/Clone-netflix-web.git
 ```
 
 Após o download do repositório em sua máquina basta realizar os seguintes comandos:
